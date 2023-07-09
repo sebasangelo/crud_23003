@@ -4,7 +4,7 @@ createApp({
     data(){
         return{
             productos: [],
-            url: 'https://sebasangelo.github.io/crud_23003/productos',
+            url: 'http://127.0.0.1:5000/productos',
             cargando: true,
             error: false
         }
@@ -25,7 +25,7 @@ createApp({
         },
 
         eliminar(producto) {
-            const url = 'https://sebasangelo.github.io/crud_23003/productos/'+ producto;
+            const url = 'http://127.0.0.1:5000/productos/'+ producto;
             let options = {
                 method: 'DELETE'
             }

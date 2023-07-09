@@ -36,7 +36,7 @@ function modificar(){
         imagen: i
     }
 
-    let url = 'http://sebasangelo.github.io/crud_23003/productos/'+id;
+    let url = 'https://sebasangelo.github.io/crud_23003/productos/'+id;
 
     let options ={
         body: JSON.stringify(producto),

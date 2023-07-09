@@ -15,7 +15,7 @@ function guardar(){
         imagen: i
     }
 
-    let url = 'http://sebasangelo.github.io/crud_23003/productos';
+    let url = 'https://sebasangelo.github.io/crud_23003/productos';
 
     let options ={
         body: JSON.stringify(producto),

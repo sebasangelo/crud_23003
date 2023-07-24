@@ -41,3 +41,5 @@ createApp({
         this.fetchData(this.url);
     }
 }).mount('#app')
+
+

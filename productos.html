@@ -3,14 +3,13 @@
 
 <head>
   <title>Productos</title>
-  
-  <meta charset="utf-8">
+  <meta charset="utf-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -42,7 +41,12 @@
                   <th scope="col">Tipo de operacion</th>
                   <th scope="col">descripcion</th>
                   <th scope="col">barrio</th>
-                  <th scope="col">precio</th>
+                  <th>
+                  <select name="precio" id="precio">
+                    <option value="pesos">Pesos</option>
+                    <option value="dolares">Dolares</option>
+                  </select>
+                  </th>
                   <th scope="col">metros</th>
                   <th scope="col">imagen</th>
                   <th scope="col">Acciones</th>

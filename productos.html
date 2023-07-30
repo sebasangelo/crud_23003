@@ -42,11 +42,15 @@
                   <th scope="col">descripcion</th>
                   <th scope="col">barrio</th>
                   <th>
-                  <select name="precio" id="precio">
+                  <select name="moneda" id="moneda">
+                    <option value="moneda">Moneda</option>
                     <option value="pesos">Pesos</option>
                     <option value="dolares">Dolares</option>
+                    <option value="euros">Euros</option>
+                    <option value="reales">Reales</option>
                   </select>
                   </th>
+                  <th scope="col">precio</th>
                   <th scope="col">metros</th>
                   <th scope="col">imagen</th>
                   <th scope="col">Acciones</th>
@@ -58,13 +62,14 @@
                   <td>{{p.tipo_de_operacion}}</td>
                   <td>{{p.descripcion}}</td>
                   <td>{{p.barrio}}</td>
+                  <td>{{p.moneda}}</td>
                   <td>{{p.precio}}</td>
                   <td>{{p.metros}}</td>
                   <td>
                     <img :src="p.imagen" :alt="p.descripcion" width="90" height="60">
                   </td>
                   <td>
-                    <a class="btn btn-primary" :href="'producto_editar.html?id='+p.id+'&tipo_de_operacion='+p.tipo_de_operacion+'&descripcion='+p.descripcion+'&barrio='+p.barrio+'&precio='+p.precio+'&metros='+p.metros+'&imagen='+p.imagen">Editar</a>
+                    <a class="btn btn-primary" :href="'producto_editar.html?id='+p.id+'&tipo_de_operacion='+p.tipo_de_operacion+'&descripcion='+p.descripcion+'&barrio='+p.barrio+'&moneda='+p.moneda+'&precio='+p.precio+'&metros='+p.metros+'&imagen='+p.imagen">Editar</a>
                     <button type="button" class="btn btn-danger" v-on:click="eliminar(p.id)">Eliminar</button>
                   </td>
                 </tr>

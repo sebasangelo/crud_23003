@@ -1,7 +1,8 @@
 function guardar(){
     let t = document.getElementById('tipo_de_operacion').value;
     let d = document.getElementById('descripcion').value;
-    let b = document.getElementById('barrio').value;   
+    let b = document.getElementById('barrio').value; 
+    let $ = document.getElementById('moneda').value; 
     let p = document.getElementById('precio').value;
     let m = document.getElementById('metros').value;
     let i = document.getElementById('imagen').value;
@@ -10,6 +11,7 @@ function guardar(){
         tipo_de_operacion: t,
         descripcion: d,
         barrio: b,
+        moneda: $,
         precio: p,
         metros: m,
         imagen: i
